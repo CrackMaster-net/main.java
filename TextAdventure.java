@@ -7,7 +7,7 @@ public class Main {
     String playersChoice = "yes";
     boolean enterToTheGame = false;
     
-    System.out.print("Do you want to enter to the game?");
+    System.out.print("Do you want to enter to the game? ");
     player = input.nextLine();
 
     if (player.equals(playersChoice)) {
@@ -22,14 +22,27 @@ public class Main {
       System.out.print("Choose Level ");
       int choice = input.nextInt();
 
+
       if (choice == 1) {
         System.out.println("You are in level 1 \n Your Health is 100");
-        break;
+      } else {
+        System.out.println("Exiting to the program");
       }
 
       if (choice == 2) {
-        System.out.println("You are in level 2 \n Your Health is 90");
-        break;
+        System.out.println("You are in level 2 \n Your Health is 90 and you have sword");
+      } else {
+        System.out.println("Exiting to the program");
+      }
+
+      System.out.println("Proceed to the Game? ");
+      player = input.nextLine();
+
+      if (player.equals(playersChoice)) {
+        System.out.println("Proceeding to the game");
+        enterToTheGame = true;
+      } else {
+        System.out.println("Exiting to the game");
       }
     }
   }
