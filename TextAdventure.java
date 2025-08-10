@@ -1,49 +1,45 @@
 import java.util.Scanner;
 
-public class Main {
-  public static void main (String[] args) {
+public class TextAdventure {
+  public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    String player;
-    String playersChoice = "yes";
-    boolean enterToTheGame = false;
-    
-    System.out.print("Do you want to enter to the game? ");
-    player = input.nextLine();
+    String game = "yes";
+    String playerInput;
+    boolean enterToTheGame= false;
+    int level;
 
-    if (player.equals(playersChoice)) {
+    System.out.print("Welcome to the game, Warrior!: ");
+    playerInput = input.nextLine();
+
+    if (playerInput.equals(game)) {
+      System.out.println("You are now at the game!");
       enterToTheGame = true;
     } else {
-      System.out.println("Exiting to the game");
+      System.out.println("Exeting to the game.");
     }
 
-    while (enterToTheGame) {
+    do {
       System.out.println("Level 1");
       System.out.println("Level 2");
-      System.out.print("Choose Level ");
-      int choice = input.nextInt();
+      System.out.print("Choose: ");
+      level = input.nextInt();
+      input.nextLine();
+
+      if (level == 1) {
+        System.out.println("You are now at level 1");
+        System.out.println("Proceeding to the Forest");
+        System.out.print("You encountered a 3 monster! Will you run or hide?: ");
+        playerInput = input.nextLine();
 
 
-      if (choice == 1) {
-        System.out.println("You are in level 1 \n Your Health is 100");
-      } else {
-        System.out.println("Exiting to the program");
+        
+        if (playerInput.equalsIgnoreCase("run")) {
+          System.out.println("The monster catch you easily!");
+        } else if (playerInput.equalsIgnoreCase("hide")) {
+          System.out.println("someone saw you and then they rescued you");
+        }
+        enterToTheGame = false;
       }
-
-      if (choice == 2) {
-        System.out.println("You are in level 2 \n Your Health is 90 and you have sword");
-      } else {
-        System.out.println("Exiting to the program");
-      }
-
-      System.out.println("Proceed to the Game? ");
-      player = input.nextLine();
-
-      if (player.equals(playersChoice)) {
-        System.out.println("Proceeding to the game");
-        enterToTheGame = true;
-      } else {
-        System.out.println("Exiting to the game");
-      }
-    }
+    } while (enterToTheGame);
   }
 }
