@@ -72,9 +72,14 @@ public class TextAdventure {
                                     System.out.println("You flee the forest with your bundle of wood. You made it… but did something follow you out?");
                                     System.out.print("(1. Quit || 2. Try Again): ");
                                     choice = input.nextInt();
-                                    if (choice == 1) enterToTheGame = false;
-                                    else if (choice == 2) continue;
-                                    else System.out.println("Invalid choice. Returning to menu.");
+                                    if (choice == 1) {
+                                        enterToTheGame = false;
+                                    }
+                                    else if (choice == 2) {
+                                        continue;
+                                    } else {
+                                        System.out.println("Invalid choice. Returning to menu.");
+                                    }
                                 } else if (choice == 2) {
                                     System.out.println("You turn slowly…");
                                     System.out.println("The forest is still. Too still.");
@@ -90,9 +95,13 @@ public class TextAdventure {
                                         System.out.println("Together, you escape the forest.");
                                         System.out.print("(1. Quit || 2. Try Again): ");
                                         choice = input.nextInt();
-                                        if (choice == 1) enterToTheGame = false;
-                                        else if (choice == 2) continue;
-                                        else System.out.println("Invalid choice.");
+                                        if (choice == 1) {
+                                            enterToTheGame = false;
+                                        } else if (choice == 2) {
+                                            continue;
+                                        } else {
+                                            System.out.println("Invalid choice.");
+                                        }
                                     } else if (choice == 2) {
                                         System.out.print("You sit against a tree, shivering. Then— a whisper. Right beside your ear. (1. Scream and run || 2. Hold your breath and pretend you’re not there): ");
                                         choice = input.nextInt();
@@ -106,9 +115,13 @@ public class TextAdventure {
                                             System.out.println("You died.");
                                             System.out.print("(1. Quit || 2. Try Again): ");
                                             choice = input.nextInt();
-                                            if (choice == 1) enterToTheGame = false;
-                                            else if (choice == 2) continue;
-                                            else System.out.println("Invalid choice.");
+                                            if (choice == 1) {
+                                                enterToTheGame = false;
+                                            } else if (choice == 2) {
+                                                continue;
+                                            } else {
+                                                System.out.println("Invalid choice.");
+                                            }
                                         } else if (choice == 2) {
                                             System.out.println("You don’t move. You don’t breathe. The whispering stops…");
                                             System.out.println("Then— a voice shouts from the edge of the forest!");
@@ -125,9 +138,13 @@ public class TextAdventure {
                                                 System.out.println("And something… is missing from your pocket.");
                                                 System.out.print("(1. Quit || 2. Try Again): ");
                                                 choice = input.nextInt();
-                                                if (choice == 1) enterToTheGame = false;
-                                                else if (choice == 2) continue;
-                                                else System.out.println("Invalid choice.");
+                                                if (choice == 1) {
+                                                    enterToTheGame = false;
+                                                } else if (choice == 2) {
+                                                    continue;
+                                                } else {
+                                                    System.out.println("Invalid choice.");
+                                                }
                                             } else if (choice == 2) {
                                                 System.out.println("You scream for help—");
                                                 System.out.println("Footsteps rush toward you.");
@@ -135,9 +152,13 @@ public class TextAdventure {
                                                 System.out.println("It’s the village guard! You’re saved!");
                                                 System.out.print("(1. Quit || 2. Try Again): ");
                                                 choice = input.nextInt();
-                                                if (choice == 1) enterToTheGame = false;
-                                                else if (choice == 2) continue;
-                                                else System.out.println("Invalid choice.");
+                                                if (choice == 1) {
+                                                    enterToTheGame = false;
+                                                } else if (choice == 2) {
+                                                    continue;
+                                                } else {
+                                                    System.out.println("Invalid choice.");
+                                                }
                                             }
                                         }
                                     }
@@ -153,12 +174,16 @@ public class TextAdventure {
 
                                 System.out.println("You can't tell what's real anymore. The forest plays tricks on your mind.");
                                 System.out.println("You collapse from fear… and are never seen again.");
-                                System.out.println("💀 You died.");
+                                System.out.println("You died.");
                                 System.out.print("(1. Quit || 2. Try Again): ");
                                 choice = input.nextInt();
-                                if (choice == 1) enterToTheGame = false;
-                                else if (choice == 2) continue;
-                                else System.out.println("Invalid choice.");
+                                if (choice == 1) {
+                                    enterToTheGame = false;
+                                } else if (choice == 2) {
+                                    continue;
+                                } else {
+                                    System.out.println("Invalid choice.");
+                                }
                             }
                         } else if (choice == 2) {
                             System.out.println("You turn back. The village lights glow warmly in the distance.");
@@ -166,9 +191,13 @@ public class TextAdventure {
                             System.out.println("But tonight, you’ll dream of glowing eyes in the trees… watching… waiting.");
                             System.out.print("(1. Quit || 2. Try Again): ");
                             choice = input.nextInt();
-                            if (choice == 1) enterToTheGame = false;
-                            else if (choice == 2) continue;
-                            else System.out.println("Invalid choice.");
+                            if (choice == 1) {
+                                enterToTheGame = false;
+                            } else if (choice == 2) {
+                                continue;
+                            } else {
+                                System.out.println("Invalid choice.");
+                            }
                         }
 
                     } else if (level == 2) {
@@ -252,10 +281,14 @@ public class TextAdventure {
                             System.out.println("💀 You died.");
                             System.out.print("(1. Quit || 2. Try Again): ");
                             choice = input.nextInt();
-                            if (choice == 1) enterToTheGame = false;
-                            else if (choice == 2) continue;
-                            else System.out.println("Invalid choice.");
-                            continue;
+                            if (choice == 1) {
+                                enterToTheGame = false;
+                            } else if (choice == 2) {
+                                continue;
+                            } else {
+                                System.out.println("Invalid choice.");
+                                continue;
+                            }
                         }
 
                         System.out.println("The creature reveals itself — a shapeshifting horror, born from fear.");
@@ -290,9 +323,13 @@ public class TextAdventure {
 
                         System.out.print("(1. Quit || 2. Try Again): ");
                         choice = input.nextInt();
-                        if (choice == 1) enterToTheGame = false;
-                        else if (choice == 2) continue;
-                        else System.out.println("Invalid choice.");
+                        if (choice == 1) {
+                            enterToTheGame = false;
+                        } else if (choice == 2) {
+                            continue;
+                        } else {
+                            System.out.println("Invalid choice.");
+                        }
 
                     } else {
                         System.out.println("Please input a valid level (1 or 2).");
